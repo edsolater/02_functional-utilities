@@ -1,4 +1,4 @@
-import { isHexString, isID, isNullish } from "./judgerType"
+import { isID } from "./isID"
 
 test("是否可以作为ID", () => {
   expect(isID("2ad4")).toBe(true)
