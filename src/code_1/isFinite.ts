@@ -1,1 +1,1 @@
-export const isFinite = Number.isFinite;
+export const isFinite = Number.isFinite

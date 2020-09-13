@@ -1,1 +1,1 @@
-export const isFalse = (val: unknown) => val === false;
+export const isFalse = (val: unknown) => val === false

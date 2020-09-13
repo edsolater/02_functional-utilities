@@ -1,1 +1,1 @@
-export const isInt = Number.isInteger;
+export const isInt = Number.isInteger

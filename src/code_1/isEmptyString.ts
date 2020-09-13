@@ -1,1 +1,1 @@
-export const isEmptyString = (val: unknown) => val === "";
+export const isEmptyString = (val: unknown) => val === ''
