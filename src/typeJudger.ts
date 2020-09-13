@@ -1,6 +1,6 @@
 export { isNull } from './code_1/isNull'
 export { isUndefined } from './code_1/isUndefined'
-export { isNullish } from './code_2/isNullish'
+export { isNullish } from './code_1/isNullish'
 
 export { isBoolean } from './code_1/isBoolean'
 export { isTrue } from './code_1/isTrue'
@@ -16,4 +16,4 @@ export { isString } from './code_1/isString'
 export { isEmptyString } from './code_1/isEmptyString'
 export { isHexString } from './code_1/isHexString'
 
-export { isID } from './code_2/isID'
+export { isID } from './code_1/isID'
