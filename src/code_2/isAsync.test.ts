@@ -5,7 +5,7 @@ const testAsync = async (params: any) => {
 }
 const testPromiseFunction = (params: any) => Promise.resolve(3)
 
-test('基本功能', () => {
+test('基础案例', () => {
   expect(isAsync(testAsync)).toBe(true)
   expect(isAsync(testPromiseFunction)).toBe(true)
 })
