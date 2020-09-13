@@ -1,5 +1,5 @@
-import { isObject } from 'code_1/judger/isObject'
-import { isPromsie } from 'code_1/judger/isPromsie'
+import { isObject } from 'code_1/checkType/isObject'
+import { isPromsie } from 'code_1/checkType/isPromsie'
 import { areEntriesEqual } from './areEntriesEqual'
 import { areSame } from './areSame'
 

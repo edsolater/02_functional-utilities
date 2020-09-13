@@ -1,7 +1,7 @@
 //@ts-nocheck
 import { areSame } from 'code_1/equal/areSame'
-import { isObject } from 'code_1/judger/isObject'
-import { isPromsie } from 'code_1/judger/isPromsie'
+import { isObject } from 'code_1/checkType/isObject'
+import { isPromsie } from 'code_1/checkType/isPromsie'
 import { areKeyEqual } from './areKeyEqual'
 
 export const areDeepEqual = (val1: unknown, val2: unknown) => {

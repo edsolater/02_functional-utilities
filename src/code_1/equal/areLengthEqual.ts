@@ -1,4 +1,4 @@
-import { isObject } from 'code_1/judger/isObject'
+import { isObject } from 'code_1/checkType/isObject'
 
 /* -------------------------------------------------------------------------- */
 

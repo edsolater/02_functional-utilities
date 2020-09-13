@@ -1,4 +1,4 @@
-import { isObject } from '../judger/isObject'
+import { isObject } from '../checkType/isObject'
 import { areEqualArray } from './areEqualArray'
 
 export const areEqualObject = (val1: object, val2: object) =>
