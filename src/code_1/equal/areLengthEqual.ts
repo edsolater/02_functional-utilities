@@ -9,3 +9,4 @@ export const areLengthEqual = (val1: {} | object, val2: {} | object) => {
   const bLength = (val2 as any).length ?? (val2 as any).size ?? Object.keys(val2).length
   return aLength === bLength
 }
+export const areSizeEqual = areLengthEqual

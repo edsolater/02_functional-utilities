@@ -9,3 +9,5 @@ export const areShallowEqual = (val1: unknown, val2: unknown) => {
     return areEntriesEqual(val1 as object, val2 as object)
   return false
 }
+
+export const areEqual = areShallowEqual

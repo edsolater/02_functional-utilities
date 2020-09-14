@@ -26,3 +26,7 @@ export { isAsync } from './code_1/checkType/isAsync'
 export { isIterable } from './code_1/checkType/isIterable'
 
 
+
+
+// 综合
+export { isType, isTypeCurried } from './code_1/checkType/isType'

@@ -1,2 +1,2 @@
-export const hasProperty = (propName: string) => (obj: object) => propName in obj
-const original = (propName: string, target: object) => propName in target
+export const hasProperty = (obj: object, propName: string) => propName in obj
+export const hasPropertyCurried = (propName: string) => (obj: object) => hasProperty(obj, propName)
