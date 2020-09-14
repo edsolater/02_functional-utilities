@@ -1,3 +1,3 @@
-import { isObject } from '../code_1/isObject'
+import { isObject } from './isObject'
 
 export const isIterable = (val: any) => isObject(val) && typeof val[Symbol.iterator] === 'function'
