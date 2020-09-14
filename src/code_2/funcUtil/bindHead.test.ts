@@ -1,7 +1,7 @@
-import { partialCall } from './partialCall'
+import { bindHead } from './bindHead'
 
 const add = (a: number, b: string) => a + b
-const testFn = partialCall(add, 3)
+const testFn = bindHead(add, 3)
 const testFn2 = add.bind(undefined, 3)
 
 test('基础案例', () => {
