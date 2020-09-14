@@ -1,3 +1,7 @@
+/**************************************************************
+ * 对单个值的类型判断
+ **************************************************************/
+
 export { isNull } from './code_1/checkType/isNull'
 export { isUndefined } from './code_1/checkType/isUndefined'
 export { isNullish } from './code_1/checkType/isNullish'

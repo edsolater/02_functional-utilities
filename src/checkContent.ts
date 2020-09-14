@@ -10,3 +10,5 @@ export { inRange } from './code_1/checkContent/inRange'
 export { inRangeBothSideClosed } from './code_1/checkContent/inRangeBothSideClosed'
 export { inRangeBothSideOpened } from './code_1/checkContent/inRangeBothSideOpened'
 export { inChoices } from './code_1/checkContent/inChoices'
+
+export { hasProperty } from './code_1/checkContent/hasProperty'
