@@ -1,4 +1,4 @@
-export const applyFuncName = <F extends Function>(name: string, func: F): F => {
+export const bindFunctionName = <F extends Function>(func: F, name: string): F => {
   const temp = {
     [name]: (...args) => func(...args)
   }

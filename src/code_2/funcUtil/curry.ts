@@ -1,7 +1,6 @@
-import { applyFuncName } from './applyFuncName'
+import { bindFunctionName } from './bindFunctionName'
 
 //TODO: 这个类型描述是抄的，感觉太过复杂了
-
 type Tail<F extends Function, S extends Number> = S extends 0
   ? F extends (...args: infer TArgs) => any
     ? TArgs
@@ -50,7 +49,9 @@ type Curried<T extends (...args: any) => any, TReturn = ReturnType<T>> = <
 type Curry = <F extends (...args: any) => any>(func: F) => Curried<F>
 
 export const curry: Curry = fn =>
-  applyFuncName(fn.name.replace('bound', 'curried'), (...args) =>
-    //@ts-ignore
-    args.length < fn.length ? curry(fn.bind(undefined, ...args)) : fn(...args)
+  bindFunctionName(
+    (...args) =>
+      //@ts-ignore
+      args.length < fn.length ? curry(fn.bind(undefined, ...args)) : fn(...args),
+    fn.name.replace('bound', 'curried')
   )
