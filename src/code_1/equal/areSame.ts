@@ -1,1 +1,2 @@
-export const areSame = Object.is
+const areSame = Object.is
+export default areSame

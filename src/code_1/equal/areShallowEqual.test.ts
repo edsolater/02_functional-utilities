@@ -1,4 +1,4 @@
-import { areShallowEqual } from './areShallowEqual'
+import areShallowEqual from './areShallowEqual'
 
 test('基础案例', () => {
   expect(areShallowEqual([1, 2], [1, 2])).toBe(true)

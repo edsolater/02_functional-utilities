@@ -1,3 +1,4 @@
-import { isTruthy } from './isTruthy'
+import isTruthy from './isTruthy'
 
-export const isFalsy = (val1: unknown) => !isTruthy(val1)
+const isFalsy = (val1: unknown) => !isTruthy(val1)
+export default isFalsy

@@ -1,4 +1,4 @@
-import { bindTail } from './bindTail'
+import bindTail from './bindTail'
 
 const add = (a: string, b: number, c: number, d: number = 3) => a + b + c
 const foo = bindTail(add, 3, 3, 4)

@@ -1,4 +1,5 @@
-import { isNull } from './isNull'
-import { isUndefined } from './isUndefined'
+import isNull from './isNull'
+import isUndefined from './isUndefined'
 
-export const isNullish = (val: unknown) => isNull(val) || isUndefined(val)
+const isNullish = (val: unknown) => isNull(val) || isUndefined(val)
+export default isNullish

@@ -1,1 +1,2 @@
-export const isPromsie = (val: any) => val instanceof Promise
+const isPromise = (val: any) => val instanceof Promise
+export default isPromise

@@ -10,13 +10,11 @@
  * const ab = getProperty({ a: 3, b: true }, 'c') // TYPE: undefined
  * const abc = getProperty({ a: 3, b: true }, 'a') // TYPE: number
  */
-export const getProperty = <O extends object, P extends keyof O | string, B = undefined>(
+const getProperty = <O extends object, P extends keyof O | string, B = undefined>(
   obj: O,
   prop: P,
   fallback?: B
 ): P extends keyof O ? O[P] : B extends undefined ? undefined : NonNullable<B> =>
   (obj as any)[prop] ?? fallback
 
-const a = getProperty({ a: 3, b: true }, 'c', 4)
-const ab = getProperty({ a: 3, b: true }, 'c')
-const abc = getProperty({ a: 3, b: true }, 'a')
+export default getProperty

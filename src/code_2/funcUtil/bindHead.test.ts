@@ -1,4 +1,4 @@
-import { bindHead } from './bindHead'
+import bindHead from './bindHead'
 
 const add = (a: number, b: string) => a + b
 const testFn = bindHead(add, 3)

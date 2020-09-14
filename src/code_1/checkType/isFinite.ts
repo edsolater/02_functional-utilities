@@ -1,1 +1,2 @@
-export const isFinite = Number.isFinite
+const isFinite = Number.isFinite
+export default isFinite

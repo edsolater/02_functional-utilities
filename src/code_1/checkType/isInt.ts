@@ -1,1 +1,2 @@
-export const isInt = Number.isInteger
+const isInt = Number.isInteger
+export default isInt

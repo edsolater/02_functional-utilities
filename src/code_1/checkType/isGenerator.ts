@@ -1,1 +1,2 @@
-export const isGenerator = (val: any) => val.constructor.name === 'GeneratorFunction'
+const isGenerator = (val: any) => val.constructor.name === 'GeneratorFunction'
+export default isGenerator

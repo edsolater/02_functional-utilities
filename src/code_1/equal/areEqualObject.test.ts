@@ -1,4 +1,4 @@
-import { areEqualObject } from './areEqualObject'
+import areEqualObject from './areEqualObject'
 
 test('基础案例', () => {
   expect(areEqualObject({ a: 1 }, { a: 1 })).toBe(true)

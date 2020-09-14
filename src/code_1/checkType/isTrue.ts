@@ -1,1 +1,2 @@
-export const isTrue = (val: unknown) => val === true
+const isTrue = (val: unknown) => val === true
+export default isTrue

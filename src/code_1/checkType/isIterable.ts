@@ -1,3 +1,4 @@
-import { isObject } from './isObject'
+import isObject from './isObject'
 
-export const isIterable = (val: any) => isObject(val) && typeof val[Symbol.iterator] === 'function'
+const isIterable = (val: any) => isObject(val) && typeof val[Symbol.iterator] === 'function'
+export default isIterable

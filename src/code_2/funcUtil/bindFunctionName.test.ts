@@ -1,4 +1,4 @@
-import { bindFunctionName } from './bindFunctionName'
+import bindFunctionName from './bindFunctionName'
 const testFn = () => {}
 
 test('基础案例', () => {

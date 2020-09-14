@@ -1,4 +1,4 @@
-import { curry } from './curry'
+import curry from './curry'
 
 const add = (a: number, b: '1' | '2') => a + b
 const curryAdd = curry(add)

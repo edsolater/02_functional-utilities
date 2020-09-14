@@ -1,4 +1,4 @@
-import { areEqualArray } from './areEqualArray'
+import areEqualArray from './areEqualArray'
 
 test('基础案例', () => {
   expect(areEqualArray([1, 2], [1, 2])).toBe(true)

@@ -1,4 +1,5 @@
-import { areEqualArray } from 'code_1/equal/areEqualArray'
+import areEqualArray from './areEqualArray'
 
-export const areEntriesEqual = (val1: {} | object, val2: {} | object) =>
+const areEntriesEqual = (val1: {} | object, val2: {} | object) =>
   areEqualArray(Object.entries(val1).flat(), Object.entries(val2).flat())
+export default areEntriesEqual

@@ -1,4 +1,4 @@
-import { isFalsy } from './isFalsy'
+import isFalsy from './isFalsy'
 
 test('基础案例', () => {
   expect(isFalsy(0)).toBe(true)

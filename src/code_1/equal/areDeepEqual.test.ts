@@ -1,4 +1,4 @@
-import { areDeepEqual } from './areDeepEqual'
+import areDeepEqual from './areDeepEqual'
 
 test('基础案例', () => {
   expect(areDeepEqual([1, 2], [1, 2])).toBe(true)

@@ -1,4 +1,4 @@
-import { getProperty } from './getProperty'
+import getProperty from './getProperty'
 
 test('基础案例', () => {
   expect(getProperty({ a: 3, b: true }, 'c', 4)).toBe(4)

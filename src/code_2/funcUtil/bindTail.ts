@@ -1,4 +1,4 @@
-import { bindFunctionName } from './bindFunctionName'
+import bindFunctionName from './bindFunctionName'
 
 export type Arr = readonly unknown[]
 
@@ -12,5 +12,6 @@ export type Arr = readonly unknown[]
  * const foo = bindTail(add, 3, 3) // foo :: string -> number
  * const foo2 = bindTail(add, 3, 3, 4) // foo :: string -> number
  */
-export const bindTail = <T, U extends Arr, R>(fn: (...args: [T, ...U]) => R, ...tailArgs: U) =>
+const bindTail = <T, U extends Arr, R>(fn: (...args: [T, ...U]) => R, ...tailArgs: U) =>
   bindFunctionName((head: T) => fn(head, ...tailArgs), `[bindTail] ${fn.name}`)
+export default bindTail

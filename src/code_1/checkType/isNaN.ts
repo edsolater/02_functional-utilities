@@ -1,1 +1,2 @@
-export const isNaN = Number.isNaN
+const isNaN = Number.isNaN
+export default isNaN

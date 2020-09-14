@@ -1,3 +1,4 @@
-import { isInt } from '../checkType/isInt'
+import isInt from '../checkType/isInt'
 
-export const isTensDigit = (n: number) => isInt(n) && String(n).length === 2
+const isTensDigit = (n: number) => isInt(n) && String(n).length === 2
+export default isTensDigit

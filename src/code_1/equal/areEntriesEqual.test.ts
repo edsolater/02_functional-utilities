@@ -1,4 +1,4 @@
-import { areEntriesEqual } from './areEntriesEqual'
+import areEntriesEqual from './areEntriesEqual'
 
 test('基础案例', () => {
   expect(areEntriesEqual([1, 2], [1, 2])).toBe(true)

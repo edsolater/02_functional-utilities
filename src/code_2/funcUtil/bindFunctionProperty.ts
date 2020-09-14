@@ -1,1 +1,2 @@
-export const bindFunctionProperty = Object.assign
+const bindFunctionProperty = Object.assign
+export default bindFunctionProperty

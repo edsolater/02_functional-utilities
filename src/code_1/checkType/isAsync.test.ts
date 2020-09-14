@@ -1,4 +1,4 @@
-import { isAsync } from './isAsync'
+import isAsync from './isAsync'
 
 const testAsync = async (params: any) => {
   return 3
