@@ -1,6 +1,4 @@
-import { getProperty } from 'code_2/parseObject/getProperty'
 import { bindFunctionName } from './bindFunctionName'
-import { bindFunctionProperty } from './bindFunctionProperty'
 
 export type Arr = readonly unknown[]
 
@@ -15,7 +13,4 @@ export type Arr = readonly unknown[]
  * const foo2 = bindTail(add, 3, 3, 4) // foo :: string -> number
  */
 export const bindTail = <T, U extends Arr, R>(fn: (...args: [T, ...U]) => R, ...tailArgs: U) =>
-  bindFunctionProperty(
-    bindFunctionName((head: T) => fn(head, ...tailArgs), `[bindTail] ${fn.name}`),
-    { tags: [...getProperty(fn, 'tags', []), 'bindTail'] }
-  )
+  bindFunctionName((head: T) => fn(head, ...tailArgs), `[bindTail] ${fn.name}`)
