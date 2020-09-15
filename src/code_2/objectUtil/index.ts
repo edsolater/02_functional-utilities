@@ -1,1 +1,1 @@
-export { default as getProperty } from './getProperty'
+export { default as getProperty, default as withDefault } from './getProperty'
