@@ -1,5 +1,5 @@
-import isObject from '../checkType/isObject'
-import isPromsie from '../checkType/isPromsie'
+import isObject from './isObject'
+import isPromsie from './isPromsie'
 import areEntriesEqual from './areEntriesEqual'
 import areSame from './areSame'
 

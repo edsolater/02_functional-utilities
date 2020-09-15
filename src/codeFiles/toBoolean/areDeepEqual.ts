@@ -1,6 +1,6 @@
 //@ts-nocheck
-import isObject from '../checkType/isObject'
-import isPromsie from '../checkType/isPromsie'
+import isObject from './isObject'
+import isPromsie from './isPromsie'
 import areSame from './areSame'
 import areKeyEqual from './areKeyEqual'
 

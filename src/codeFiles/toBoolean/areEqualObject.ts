@@ -1,4 +1,4 @@
-import isObject from '../checkType/isObject'
+import isObject from './isObject'
 import areEqualArray from './areEqualArray'
 
 const areEqualObject = (val1: object, val2: object) =>

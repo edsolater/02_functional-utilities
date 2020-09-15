@@ -1,5 +1,4 @@
-import isObject from '../checkType/isObject'
-
+import isObject from './isObject'
 
 const areLengthEqual = (val1: {} | object, val2: {} | object) => {
   if (!isObject(val1) || !isObject(val2)) return false

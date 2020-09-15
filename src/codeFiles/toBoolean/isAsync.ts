@@ -1,5 +1,5 @@
-import isFunction from 'code_1/checkType/isFunction'
-import isPromsie from 'code_1/checkType/isPromsie'
+import isFunction from 'codeFiles/toBoolean/isFunction'
+import isPromsie from 'codeFiles/toBoolean/isPromsie'
 import isAsyncFunction from './isAsyncFunction'
 /**
  * 检查函数是否返回Promise
