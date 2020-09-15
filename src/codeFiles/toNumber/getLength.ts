@@ -1,7 +1,6 @@
-import isArray from 'codeFiles/toBoolean/isArray'
-const isSet = (obj: any): obj is Set<unknown> => obj instanceof Set
-const isMap = (obj: any): obj is Map<unknown, unknown> => obj instanceof Map
-
+import isArray from '../toBoolean/isArray'
+import isMap from '../toBoolean/isMap'
+import isSet from '../toBoolean/isSet'
 const getLength = (obj: unknown[] | Set<unknown> | Map<unknown, unknown> | object) => {
   if (isArray(obj)) {
     return obj.length
