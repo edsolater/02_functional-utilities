@@ -1,1 +1,2 @@
-export { getFirst, getLast, tail } from './codeFiles/toArray'
+export { tail } from './codeFiles/toArray'
+export { getFirst, getLast } from './codeFiles/pickItem'

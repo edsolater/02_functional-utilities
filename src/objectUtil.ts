@@ -1,1 +1,1 @@
-export { getProperty, getProperty as withDefault } from './codeFiles/toObject'
+export { getProperty, getProperty as withDefault } from './codeFiles/pickItem'
