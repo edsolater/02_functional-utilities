@@ -1,13 +1,11 @@
-export {
-  isTruthy,
-  isFalsy,
-  isUnitsDigit,
-  isTensDigit,
-  isHundredsDigit,
-  isNDigit,
-  inRange,
-  inRangeBothSideClosed,
-  inRangeBothSideOpened,
-  inChoices,
-  hasProperty
-} from './codeFiles/toBoolean'
+export { default as isTruthy } from './codeFiles/toBoolean/isTruthy'
+export { default as isFalsy } from './codeFiles/toBoolean/isFalsy'
+export { default as isUnitsDigit } from './codeFiles/toBoolean/isUnitsDigit'
+export { default as isTensDigit } from './codeFiles/toBoolean/isTensDigit'
+export { default as isHundredsDigit } from './codeFiles/toBoolean/isHundredsDigit'
+export { default as isNDigit } from './codeFiles/toBoolean/isNDigit'
+export { default as inRange } from './codeFiles/toBoolean/inRange'
+export { default as inRangeBothSideClosed } from './codeFiles/toBoolean/inRangeBothSideClosed'
+export { default as inRangeBothSideOpened } from './codeFiles/toBoolean/inRangeBothSideOpened'
+export { default as inChoices } from './codeFiles/toBoolean/inChoices'
+export { default as hasProperty } from './codeFiles/toBoolean/hasProperty'
