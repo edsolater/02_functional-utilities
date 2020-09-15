@@ -4,3 +4,4 @@
  */
 
 export { default as getLength } from './codeFiles/toNumber/getLength'
+export { default as sum } from './codeFiles/toNumber/sum'
