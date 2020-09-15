@@ -1,4 +1,5 @@
 import bindFunctionName from './bindFunctionName'
+import funcTags from './__magicTags'
 
 export type Arr = readonly unknown[]
 
@@ -13,5 +14,5 @@ export type Arr = readonly unknown[]
  * const foo2 = bindTail(add, 3, 3, 4) // foo :: string -> number
  */
 const bindTail = <T, U extends Arr, R>(fn: (...args: [T, ...U]) => R, ...tailArgs: U) =>
-  bindFunctionName((head: T) => fn(head, ...tailArgs), `[bindTail] ${fn.name}`)
+  bindFunctionName((head: T) => fn(head, ...tailArgs), `[${funcTags.BINDTAIL}] ${fn.name}`)
 export default bindTail

@@ -9,3 +9,4 @@ const funcTags = {
   // 绑定了尾部参数的
   BINDTAIL: 'bindTail'
 }
+export default funcTags

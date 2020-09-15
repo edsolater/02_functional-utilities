@@ -1,7 +1,7 @@
 import bindTail from './bindTail'
 import getTags from './getTags'
 
-const add = (a: string, b: number, c: number, d: number = 3) => a + b + c
+const add = (a: string, b: number, c: number, d: number = 3) => a + b + c + d
 const foo = bindTail(add, 3, 3, 4)
 
 test('基础案例', () => {

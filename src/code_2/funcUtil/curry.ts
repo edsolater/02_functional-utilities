@@ -1,4 +1,5 @@
 import bindFunctionName from './bindFunctionName'
+import funcTags from './__magicTags'
 
 //TODO: 这个类型描述是抄的，感觉太过复杂了
 type Tail<F extends Function, S extends Number> = S extends 0
@@ -53,6 +54,6 @@ const curry: Curry = fn =>
     (...args) =>
       //@ts-ignore
       args.length < fn.length ? curry(fn.bind(undefined, ...args)) : fn(...args),
-    fn.name.replace('bound', 'curried')
+    fn.name.replace('bound', `[${funcTags.CURRIED}]`)
   )
 export default curry

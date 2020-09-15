@@ -26,4 +26,4 @@ export { default as isAsync } from './isAsync'
 export { default as isIterable } from './isIterable'
 
 // 综合
-export { default as isType, isTypeCurried } from './isType'
+export { default as isType } from './isType'
