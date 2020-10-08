@@ -11,7 +11,7 @@
 const objectMap = <T extends object, U>(
   target: T,
   mapperFn: (entry: [key: keyof T, value: T[keyof T]], index: number) => [key: string, value: U]
-): { [key: string]: U } => {
+) => {
   //@ts-ignore
   return Object.fromEntries(Object.entries(target).map(mapperFn))
 }
