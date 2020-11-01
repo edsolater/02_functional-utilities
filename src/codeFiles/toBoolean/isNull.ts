@@ -1,2 +1,3 @@
-const isNull = (val: unknown) => val === null
-export default isNull
+export default function isNull(val: unknown): val is null {
+  return val === null
+}

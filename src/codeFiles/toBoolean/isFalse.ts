@@ -1,2 +1,3 @@
-const isFalse = (val: unknown) => val === false
-export default isFalse
+export default function isFalse(val: unknown): val is false {
+  return val === false
+}

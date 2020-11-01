@@ -1,5 +1,6 @@
 import isNull from './isNull'
 import isUndefined from './isUndefined'
 
-const isNullish = (val: unknown) => isNull(val) || isUndefined(val)
-export default isNullish
+export default function isNullish(val: unknown): val is undefined | null {
+  return isNull(val) || isUndefined(val)
+}

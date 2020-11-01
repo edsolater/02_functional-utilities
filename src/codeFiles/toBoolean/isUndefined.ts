@@ -1,2 +1,3 @@
-const isUndefined = (val: unknown) => val === undefined
-export default isUndefined
+export default function isUndefined(val: unknown): val is undefined {
+  return val === undefined
+}
